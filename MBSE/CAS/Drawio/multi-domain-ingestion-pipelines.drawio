@@ -1,0 +1,75 @@
+<mxfile host="Electron">
+  <diagram name="Pipeline de Ingesta Multidominio" id="Bh7UXT2R0M3dmm0P5zPV">
+    <mxGraphModel dx="2560" dy="1631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f4ecf7;strokeColor=#8e44ad;fontStyle=1" value="CORE PIPELINE &amp; METAMODEL ENGINE&#xa;(Rascal MPL &amp; LLM Semantic Translator)" vertex="1">
+          <mxGeometry height="680" width="320" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-2" parent="7QF6zJHZuT49sOpXwN_l-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8e44ad;fontColor=#ffffff;fontStyle=1;" value="Metaprogramming Parser&#xa;(Rascal MPL AST &amp; M3 Extraction)" vertex="1">
+          <mxGeometry height="60" width="260" x="30" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-3" parent="7QF6zJHZuT49sOpXwN_l-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7d3c98;fontColor=#ffffff;fontStyle=1;" value="LLM Specs &amp; Semantic Engine&#xa;(Prompt Context &amp; AST Transformation)" vertex="1">
+          <mxGeometry height="80" width="260" x="30" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-4" parent="7QF6zJHZuT49sOpXwN_l-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5b2c6f;fontColor=#ffffff;fontStyle=1;" value="GraalVM Polyglot Engine&#xa;(Truffle / Native AOT Execution)" vertex="1">
+          <mxGeometry height="60" width="260" x="30" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ebf5fb;strokeColor=#2980b9;fontStyle=1" value="1. LOW-CODE PIPELINE" vertex="1">
+          <mxGeometry height="150" width="320" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-6" parent="7QF6zJHZuT49sOpXwN_l-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;fontColor=#ffffff;" value="Entrada: UML Diagrams / Models" vertex="1">
+          <mxGeometry height="80" width="130" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-7" parent="7QF6zJHZuT49sOpXwN_l-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1f618d;fontColor=#ffffff;" value="Salida: ArchiMate Enterprise Spec" vertex="1">
+          <mxGeometry height="80" width="130" x="170" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e8f8f5;strokeColor=#16a085;fontStyle=1" value="2. LEGACY TO MODERN PIPELINE" vertex="1">
+          <mxGeometry height="150" width="320" x="40" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-9" parent="7QF6zJHZuT49sOpXwN_l-8" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1bc4a1;fontColor=#ffffff;" value="Entrada: Legacy&#xa;(ADA, Fortran, Eiffel, Octave)" vertex="1">
+          <mxGeometry height="80" width="130" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-10" parent="7QF6zJHZuT49sOpXwN_l-8" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#117a65;fontColor=#ffffff;" value="Salida: Modern Polyglot&#xa;(OCaml, Modelica, Julia, Scilab)" vertex="1">
+          <mxGeometry height="80" width="130" x="170" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-11" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fef9e7;strokeColor=#f1c40f;fontStyle=1" value="3. MODELICA AI PIPELINE" vertex="1">
+          <mxGeometry height="150" width="320" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-12" parent="7QF6zJHZuT49sOpXwN_l-11" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f39c12;fontColor=#ffffff;" value="Entrada: SysML Architecture" vertex="1">
+          <mxGeometry height="80" width="130" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-13" parent="7QF6zJHZuT49sOpXwN_l-11" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b9770e;fontColor=#ffffff;" value="Salida: MechatronicUML / Cyber-Physical" vertex="1">
+          <mxGeometry height="80" width="130" x="170" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-14" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f9ebea;strokeColor=#c0392b;fontStyle=1" value="4. AI4DIA CAD PIPELINE" vertex="1">
+          <mxGeometry height="150" width="320" x="40" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-15" parent="7QF6zJHZuT49sOpXwN_l-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;fontColor=#ffffff;" value="Entrada: CAD Generativo&#xa;(PLASM, STEP)" vertex="1">
+          <mxGeometry height="80" width="130" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-16" parent="7QF6zJHZuT49sOpXwN_l-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#922b21;fontColor=#ffffff;" value="Salida: Parametric Script&#xa;(OpenSCAD Code)" vertex="1">
+          <mxGeometry height="80" width="130" x="170" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-17" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5f5e3;strokeColor=#27ae60;fontStyle=1" value="GRAALMODELICA CLOUD AI PLATFORM&#xa;(Ingestion Target &amp; Simulation Runtime)" vertex="1">
+          <mxGeometry height="680" width="320" x="800" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-18" parent="7QF6zJHZuT49sOpXwN_l-17" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;fontColor=#ffffff;fontStyle=1;" value="Ingested Cyber-Physical Specs&#xa;(Unified Modelica AST)" vertex="1">
+          <mxGeometry height="80" width="260" x="30" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-19" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-6" target="7QF6zJHZuT49sOpXwN_l-2" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-20" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-9" target="7QF6zJHZuT49sOpXwN_l-2" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-21" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-12" target="7QF6zJHZuT49sOpXwN_l-3" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-22" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-15" target="7QF6zJHZuT49sOpXwN_l-2" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-23" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-2" target="7QF6zJHZuT49sOpXwN_l-3" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-24" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-3" target="7QF6zJHZuT49sOpXwN_l-4" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-25" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-3" target="7QF6zJHZuT49sOpXwN_l-7" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-26" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-3" target="7QF6zJHZuT49sOpXwN_l-10" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-27" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-3" target="7QF6zJHZuT49sOpXwN_l-13" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-28" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-3" target="7QF6zJHZuT49sOpXwN_l-16" />
+        <mxCell id="7QF6zJHZuT49sOpXwN_l-29" edge="1" parent="1" source="7QF6zJHZuT49sOpXwN_l-4" target="7QF6zJHZuT49sOpXwN_l-18" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
